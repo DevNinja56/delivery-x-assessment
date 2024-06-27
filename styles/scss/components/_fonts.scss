@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Metropolis", sans-serif;
+  src: url("../../../assets/fonts/Metropolis-Bold.otf") format("otf"),
+    url("../../../assets/fonts/Metropolis-Medium.otf") format("otf"),
+    url("../../../assets/fonts/Metropolis-Regular.otf") format("otf"),
+    url("../../../assets/fonts/Metropolis-SemiBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Metropolis", sans-serif;
+}

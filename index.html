@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/css/index.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+  </head>
+  <body>
+    <nav
+      id="nav-bar"
+      class="navbar px-6 py-4 sm-py-7 customBoxShadow navMain position-fixed bg-white"
+    >
+      <div
+        class="d-flex justify-content-between align-items-center w-100 navMainContainer position-relative"
+      >
+        <div>
+          <img
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg"
+            alt="Deliver X Webflow Template - Logo"
+            class="header-logo"
+          />
+        </div>
+        <div class="d-flex align-items-center gap-10">
+          <div class="d-none d-lg-flex align-items-center gap-4 font-500">
+            <li
+              class="list-unstyled hover-nav-li duration300Transition cursor-pointer"
+            >
+              Home
+            </li>
+            <li
+              class="list-unstyled hover-nav-li duration300Transition cursor-pointer"
+            >
+              About
+            </li>
+            <li
+              class="list-unstyled hover-nav-li duration300Transition cursor-pointer"
+            >
+              Pricing
+            </li>
+            <li
+              class="list-unstyled hover-nav-li duration300Transition cursor-pointer d-flex align-items-center gap-2 pages-nav"
+            >
+              Pages
+              <i class="fa-solid fa-angle-down duration300Transition"></i>
+              <div class="pt-8 position-absolute t-10 pt-16 r-20 w-50 dropdown">
+                <div
+                  class="bg-white px-8 py-12 rounded-16 customHeroSectionBoxShadow2 d-flex justify-content-between w-100 duration300Transition"
+                >
+                  <div class="d-flex flex-column gap-4">
+                    <h1 class="font-700 text-20 text-secondary">Menu</h1>
+                    <div class="d-flex gap-12">
+                      <ul
+                        class="d-flex flex-column text-lg list-unstyled gap-2"
+                      >
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Home
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          About
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Contact
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Blog
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Blog posts
+                        </li>
+                      </ul>
+                      <ul
+                        class="d-flex flex-column list-unstyled text-lg gap-2"
+                      >
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Plans
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Plan single
+                        </li>
+                        <li
+                          class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                        >
+                          Register
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column gap-4">
+                    <h1 class="font-700 text-20 text-secondary">
+                      Utility pages
+                    </h1>
+                    <ul class="d-flex flex-column text-lg list-unstyled gap-2">
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        Start here
+                      </li>
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        Styleguide
+                      </li>
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        Password protected
+                      </li>
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        404 Not found
+                      </li>
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        Licenses
+                      </li>
+                      <li
+                        class="hover-dropdown-li-duration duration300Transition cursor-pointer"
+                      >
+                        Changelog
+                      </li>
+                      <li
+                        class="hover-more-template-li duration300Transition cursor-pointer font-700"
+                      >
+                        Browse More Templates
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div
+            class="font-500 cursor-pointer hover-nav-li duration300Transition trigger-div"
+          >
+            Cart(0)
+            <div
+              class="position-fixed top-0 mainBlackDiv h-100 w-100 d-flex justify-content-end side-bar-container"
+            >
+              <div
+                class="h-100 bg-white sideBar w-50 d-flex flex-column gap-52 align-items-center side-bar-container-main"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between p-6 border-bottom border-borderColor w-100"
+                >
+                  <h1 class="font-700 text-22 text-secondary">Your Cart</h1>
+                  <i
+                    class="fa-solid fa-xmark text-28 duration300Transition close-icon"
+                  ></i>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-4">
+                  <h4 class="text-mainParagraph text-lg text-secondary">
+                    No items found.
+                  </h4>
+                  <button
+                    class="customButton font-700 text-white border-none border duration300Transition registerAppTransition w-fit"
+                  >
+                    Go to pricing
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-flex align-items-center gap-3">
+            <button
+              class="customButton border duration300Transition downloadAppTransition"
+            >
+              Downloaded app
+            </button>
+            <button
+              class="customButton font-700 text-white border-none border duration300Transition registerAppTransition"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="hero-section"
+      class="px-6 py-8 py-lg-16 mt-48 d-flex flex-column flex-lg-row gap-10 align-items-center justify-content-between overflow-hidden bg-grayColor"
+    >
+      <div
+        class="d-flex flex-column gap-2 hero-section-container w-75 w-lg-50 align-items-center align-items-lg-start"
+      >
+        <h6 class="text-lg text-primary hero-section-title position-relative">
+          ABOUT DELIVER X
+        </h6>
+        <h1
+          class="text-62 hero-section-container-text text-secondary font-700 hero-section-heading position-relative text-lg-start text-center"
+        >
+          We are here to help amazing restaurants get great customers
+        </h1>
+        <p
+          class="text-lg text-mainParagraph hero-section-para text-lg-start text-center width-80 w-lg-100"
+        >
+          At morbi adipiscing sit sed consectetur senectus Dignissim sed amet
+          tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed
+          lacinia massa pretium aliquam libero et.
+        </p>
+      </div>
+      <div
+        class="position-relative hero-section-container-2 width-55 width-lg-43"
+      >
+        <img
+          class="hero-section-2-main-img h-100 w-100 position-relative"
+          src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768f4ff084869c4a1c57_image-about-hero-delivery-template.png"
+        />
+        <div
+          class="position-absolute width-46 width-lg-43 rounded-16 hero-section-2-img customHeroSectionBoxShadow2"
+        >
+          <img
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768e2b5f20a3847da6a8_image-1-card-about-hero-delivery-template.png"
+            alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template"
+            class="image cover h-100 w-100 rounded-16"
+          />
+        </div>
+        <div class="position-absolute hero-section-2-img-2 w-50 rounded-16">
+          <img
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768ecbdabafa33e57a7c_image-2-card-about-hero-delivery-template.svg"
+            alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template"
+            class="image cover h-100 w-100 rounded-16"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="stats-section"
+      class="stats-section-main-container px-6 py-20 bg-grayColor"
+    >
+      <div
+        class="d-flex flex-column align-items-center stats-section-container-1 position-relative"
+      >
+        <h1 class="text-56 font-700">10M<span class="text-primary">+</span></h1>
+        <p class="text-lg text-mainParagraph font-500">Happy customers</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center stats-section-container-2 position-relative"
+      >
+        <h1 class="text-56 font-700">
+          500k<span class="text-primary">+</span>
+        </h1>
+        <p class="text-lg text-mainParagraph font-500">Restaurants available</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center stats-section-container-3 position-relative"
+      >
+        <h1 class="text-56 font-700">30M<span class="text-primary">+</span></h1>
+        <p class="text-lg text-mainParagraph font-500">Successful deliveries</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center stats-section-container-4 position-relative"
+      >
+        <h1 class="text-56 font-700">
+          99.9 <span class="text-primary">%</span>
+        </h1>
+        <p class="text-lg text-mainParagraph font-500">Customer satisfaction</p>
+      </div>
+    </section>
+
+    <section
+      id="about-us-section"
+      class="px-6 pt-16 pb-5 mt-30 d-flex gap-10 align-items-center justify-content-between overflow-hidden"
+    >
+      <div class="w-50 about-us-animation position-relative">
+        <img
+          class="about-section-2-main-img h-100 w-100 rounded-16"
+          src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template.jpg"
+        />
+      </div>
+
+      <div class="d-flex flex-column gap-2 width-38">
+        <h6 class="text-lg text-primary">ABOUT US</h6>
+        <h1 class="about-section-container-text text-secondary font-700">
+          Our company started back in 2016
+        </h1>
+        <p class="text-lg text-mainParagraph about-section-container-paragraph">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="our-mission-section"
+      class="px-6 d-flex gap-10 align-items-center justify-content-between overflow-hidden pb-36 bg-grayColor"
+    >
+      <div class="d-flex flex-column gap-2 width-38">
+        <h6 class="text-lg text-primary">OUR MISSION</h6>
+        <h1 class="mission-section-container-text text-secondary font-700">
+          Our mission is to disrupt the food industry
+        </h1>
+        <p
+          class="text-lg text-mainParagraph mission-section-container-paragraph"
+        >
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit.
+        </p>
+      </div>
+
+      <div class="w-50 our-mission-animation position-relative">
+        <img
+          class="mission-section-2-main-img h-100 w-100 rounded-16"
+          src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template.jpg"
+        />
+      </div>
+    </section>
+
+    <section
+      id="our-journey-section"
+      class="px-6 py-36 d-flex gap-10 justify-content-between bg-grayColor position-relative"
+    >
+      <div
+        class="d-flex flex-column gap-9 position-sticky our-journey-sticky-section width-38"
+      >
+        <div class="d-flex flex-column gap-2">
+          <h6 class="text-lg text-primary">OUR JOURNEY</h6>
+          <h1 class="journey-section-container-text text-secondary font-700">
+            It has been a long but incredible journey
+          </h1>
+          <p
+            class="text-lg text-mainParagraph journey-section-container-paragraph"
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+            egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
+          </p>
+        </div>
+        <button
+          class="customButton font-700 text-white border-none border duration300Transition registerAppTransition w-fit"
+        >
+          Download app
+        </button>
+      </div>
+      <div class="w-50 d-flex flex-column gap-10">
+        <div
+          class="px-12 py-14 bg-white rounded-24 customJourneySectionBoxShadow our-journey-section-container"
+        >
+          <div class="d-flex flex-column gap-10">
+            <div class="d-flex flex-column gap-4">
+              <h5 class="text-22 font-700 text-primary">2016</h5>
+              <h1 class="text-lg text-mainParagraph font-700 text-secondary">
+                Deliver X was founded
+              </h1>
+            </div>
+            <p class="text-lg text-mainParagraph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam.
+            </p>
+          </div>
+        </div>
+        <div
+          class="px-12 py-14 bg-white rounded-24 customJourneySectionBoxShadow our-journey-section-container-2"
+        >
+          <div class="d-flex flex-column gap-10">
+            <div class="d-flex flex-column gap-4">
+              <h5 class="text-22 font-700 text-primary">2018</h5>
+              <h1 class="text-lg text-mainParagraph font-700 text-secondary">
+                Raised Series A at $50M valuation
+              </h1>
+            </div>
+            <p class="text-lg text-mainParagraph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam.
+            </p>
+          </div>
+        </div>
+        <div
+          class="px-12 py-14 bg-white rounded-24 customJourneySectionBoxShadow our-journey-section-container-3"
+        >
+          <div class="d-flex flex-column gap-10">
+            <div class="d-flex flex-column gap-4">
+              <h5 class="text-22 font-700 text-primary">2019</h5>
+              <h1 class="text-lg text-mainParagraph font-700 text-secondary">
+                Raised Series B at $600M valuation
+              </h1>
+            </div>
+            <p class="text-lg text-mainParagraph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam.
+            </p>
+          </div>
+        </div>
+        <div
+          class="px-12 py-14 bg-white rounded-24 customJourneySectionBoxShadow our-journey-section-container-4"
+        >
+          <div class="d-flex flex-column gap-10">
+            <div class="d-flex flex-column gap-4">
+              <h5 class="text-22 font-700 text-primary">2022</h5>
+              <h1 class="text-lg text-mainParagraph font-700 text-secondary">
+                Raised Series C at $3B valuation
+              </h1>
+            </div>
+            <p class="text-lg text-mainParagraph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="our-partner-section"
+      class="px-6 py-36 d-flex gap-10 flex-column align-items-center w-100 bg-grayColor"
+    >
+      <div class="d-flex flex-column gap-2 align-items-center w-50">
+        <h6 class="text-lg text-primary">OUR PARTNERS</h6>
+        <h1
+          class="partner-section-container-text text-secondary font-700 text-center"
+        >
+          We don’t walk alone, Deliver X works thanks to our partners
+        </h1>
+        <p
+          class="text-lg text-mainParagraph partner-section-container-paragraph text-center"
+        >
+          Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+          egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
+        </p>
+      </div>
+      <div class="our-partner-main-container">
+        <div class="text-center our-partner-div-1 position-relative">
+          <img
+            class="mb-4"
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg"
+            alt="Customers - Deliver X Webflow Template"
+          />
+          <h1 class="font-700 text-secondary text-28 mb-4">Customers</h1>
+          <p class="text-lg text-mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+            phasellus mollis sit aliquam
+            <span class="text-no-wrap">sit nullam.</span>
+          </p>
+        </div>
+        <div class="text-center our-partner-div-2 position-relative">
+          <img
+            class="mb-4"
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg"
+            alt="Restaurants - Deliver X Webflow Template"
+          />
+          <h1 class="font-700 text-secondary text-28 mb-4">Restaurants</h1>
+          <p class="text-lg text-mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+            phasellus mollis sit aliquam
+            <span class="text-no-wrap">sit nullam.</span>
+          </p>
+        </div>
+        <div class="text-center our-partner-div-3 position-relative">
+          <img
+            class="mb-4"
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg"
+            alt="Riders - Deliver X Webflow Template"
+          />
+          <h1 class="font-700 text-secondary text-28 mb-4">Riders</h1>
+          <p class="text-lg text-mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+            phasellus mollis sit aliquam
+            <span class="text-no-wrap">sit nullam.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="press-and-news-section"
+      class="px-6 py-36 d-flex gap-10 flex-column align-items-center w-100 bg-grayColor"
+    >
+      <div class="d-flex flex-column gap-2 align-items-center width-43">
+        <h6 class="text-lg text-primary">PRESS & NEWS</h6>
+        <h1
+          class="press-section-container-text text-secondary font-700 text-center"
+        >
+          See what the press says about Deliver X
+        </h1>
+      </div>
+      <div class="press-main-container position-relative gap-6">
+        <div
+          class="py-24 px-16 bg-white customJourneySectionBoxShadow rounded-24 press-main-container-div duration300Transition cursor-pointer read-more-div"
+        >
+          <div class="d-flex flex-column gap-8">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017fab386a9117726aad8f_image-1-logo-press-delivery-template.svg"
+                alt="What The Press Says About Our Company - Deliver X Webflow Template"
+              />
+            </div>
+            <h1 class="font-700 text-28">
+              Deliver X raises $26M in series B funding for growth
+            </h1>
+            <div class="w-100 d-flex justify-content-between">
+              <div class="d-flex align-items-center gap-1">
+                <div
+                  class="text-primary text-lg font-700 d-flex gap-2 align-items-center duration300Transition read-more"
+                >
+                  Read more
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-lg duration300Transition"
+                  ></i>
+                </div>
+              </div>
+              <div class="text-mainParagraph font-500 text-22">
+                January 22, 2023
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="py-24 px-16 bg-white customJourneySectionBoxShadow rounded-24 press-main-container-div duration300Transition cursor-pointer read-more-div"
+        >
+          <div class="d-flex flex-column gap-8">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017fac4a9181ff3e5b1fb1_image-3-logo-press-delivery-template.svg"
+                loading="eager"
+                alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                class="image"
+              />
+            </div>
+            <h1 class="font-700 text-28">
+              Deliver X claims to be the #1 player in the delivery industry
+            </h1>
+            <div class="w-100 d-flex justify-content-between">
+              <div class="d-flex align-items-center gap-1">
+                <div
+                  class="text-primary text-lg font-700 d-flex gap-2 align-items-center duration300Transition read-more"
+                >
+                  Read more
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-lg duration300Transition"
+                  ></i>
+                </div>
+              </div>
+              <div class="text-mainParagraph font-500 text-22">
+                Nov 15, 2022
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="py-24 px-16 bg-white customJourneySectionBoxShadow rounded-24 press-main-container-div duration300Transition cursor-pointer read-more-div"
+        >
+          <div class="d-flex flex-column gap-8">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017facf5a81a3025f830c1_image-2-logo-press-delivery-template.svg"
+                alt="What The Press Says About Our Company - Deliver X Webflow Template"
+              />
+            </div>
+            <h1 class="font-700 text-28">
+              Introducing curbside ordering with Deliver X
+            </h1>
+            <div class="w-100 d-flex justify-content-between">
+              <div class="d-flex align-items-center gap-1">
+                <div
+                  class="text-primary text-lg font-700 d-flex gap-2 align-items-center duration300Transition read-more"
+                >
+                  Read more
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-lg duration300Transition"
+                  ></i>
+                </div>
+              </div>
+              <div class="text-mainParagraph font-500 text-22">
+                Sep 18, 2022
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="py-24 px-16 bg-white customJourneySectionBoxShadow rounded-24 press-main-container-div duration300Transition cursor-pointer read-more-div"
+        >
+          <div class="d-flex flex-column gap-8">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017fab7168b306f912ea93_image-4-logo-press-delivery-template.svg"
+                loading="eager"
+                alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                class="image"
+              />
+            </div>
+            <h1 class="font-700 text-28">
+              Introducing the Square POS integration with Deliver X
+            </h1>
+            <div class="w-100 d-flex justify-content-between">
+              <div class="d-flex align-items-center gap-1">
+                <div
+                  class="text-primary text-lg font-700 d-flex gap-2 align-items-center duration300Transition read-more"
+                >
+                  Read more
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-lg duration300Transition"
+                  ></i>
+                </div>
+              </div>
+              <div class="text-mainParagraph font-500 text-22">
+                Mar 12, 2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="d-flex flex-column gap-20 px-6 pt-16 border border-borderColor"
+    >
+      <div
+        id="footer_section_one"
+        class="w-100 d-flex justify-content-between align-items-center border-bottom border-borderColor pb-16 position-relative"
+      >
+        <div class="d-flex flex-column gap-4 width-35">
+          <div>
+            <img
+              src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg"
+              alt="Deliver X Webflow Template - Logo"
+              class="header-logo"
+            />
+          </div>
+          <p class="text-lg text-mainParagraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut.
+          </p>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <button
+            class="customButton font-700 text-white border-none border duration300Transition registerAppTransition w-fit"
+          >
+            Download for iOS
+          </button>
+          <button
+            class="customButton font-700 text-white border-none border duration300Transition registerAppTransition w-fit"
+          >
+            Download for Android
+          </button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between" id="footer_section_two">
+        <div class="d-flex flex-column gap-4">
+          <h1 class="font-700 text-20 text-secondary">Menu</h1>
+          <div class="d-flex gap-12">
+            <ul class="d-flex flex-column text-lg list-unstyled gap-2">
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Home
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                About
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Contact
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Blog
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Blog posts
+              </li>
+            </ul>
+            <ul class="d-flex flex-column list-unstyled text-lg gap-2">
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Plans
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Plan single
+              </li>
+              <li class="hover-nav-li duration300Transition cursor-pointer">
+                Register
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-4">
+          <h1 class="font-700 text-20 text-secondary">Utility pages</h1>
+          <ul class="d-flex flex-column text-lg list-unstyled gap-2">
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              Start here
+            </li>
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              Styleguide
+            </li>
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              Password protected
+            </li>
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              404 Not found
+            </li>
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              Licenses
+            </li>
+            <li class="hover-nav-li duration300Transition cursor-pointer">
+              Changelog
+            </li>
+            <li
+              class="hover-more-template-li duration300Transition cursor-pointer font-700"
+            >
+              Browse More Templates
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column gap-4">
+          <h1 class="font-700 text-20 text-secondary">Available in</h1>
+          <div class="available-in-container gap-4">
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba8182905a8fd1c_icon-1-service-available-delivery-template.svg"
+                alt="San Francisco - Deliver X Webflow Template"
+                class="rounded-24"
+              />
+              <h1 class="text-lg font-700 text-secondary">New York, NYA</h1>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba818a369a8fd1e_icon-2-service-available-delivery-template.svg"
+                alt="New York - Deliver X Webflow Template"
+                class="rounded-24"
+              />
+              <h1 class="text-lg font-700 text-secondary">Los Angeles, CA</h1>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b08dbc7d63e9b3811_icon-3-service-available-delivery-template.svg"
+                alt="Los Angeles - Deliver X Webflow Template"
+                class="rounded-24"
+              />
+              <h1 class="text-lg font-700 text-secondary">Seattle, WA</h1>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b80572eda7e5d0c79_icon-4-service-available-delivery-template.svg"
+                alt="Seattle - Deliver X Webflow Template"
+                class="rounded-24"
+              />
+              <h1 class="text-lg font-700 text-secondary">San Francisco, CA</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-center py-4 border-top border-borderColor text-lg text-secondary gap-2 copyRightDiv position-relative"
+      >
+        Copyright © Deliver X | Designed by
+        <span
+          class="hover-footer-last-text cursor-pointer duration300Transition"
+          >BRIX Templates</span
+        >
+        - Powered by
+        <span
+          class="hover-footer-last-text cursor-pointer duration300Transition"
+          >Webflow</span
+        >
+      </div>
+    </footer>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

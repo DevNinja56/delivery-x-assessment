@@ -1,0 +1,28 @@
+.partner-section-container-text {
+  line-height: 1.161em;
+}
+
+.partner-section-container-paragraph {
+  line-height: 1.667em;
+}
+
+.our-partner-main-container {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.our-partner-div-1 {
+  opacity: 0;
+}
+
+.our-partner-div-2 {
+  opacity: 0;
+}
+
+.our-partner-div-3 {
+  opacity: 0;
+}

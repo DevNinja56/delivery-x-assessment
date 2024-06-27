@@ -1,0 +1,26 @@
+.hover-nav-li:hover {
+  color: $primary;
+}
+
+.hover-more-template-li {
+  border-bottom: 2px solid $primary;
+  margin-bottom: 4px;
+  color: $primary;
+}
+
+.hover-more-template-li:hover {
+  border-bottom: 2px solid $secondary;
+  color: $secondary;
+}
+
+.hover-footer-last-text {
+  color: $primary;
+}
+
+.hover-footer-last-text:hover {
+  color: $secondary;
+}
+
+#footer_section_one {
+  opacity: 0;
+}

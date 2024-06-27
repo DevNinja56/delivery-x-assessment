@@ -1,0 +1,27 @@
+.press-section-container-text {
+  line-height: 1.161em;
+}
+
+.press-section-container-paragraph {
+  line-height: 1.667em;
+}
+
+.press-main-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.press-main-container-div:hover {
+  transition: all;
+  transition-duration: 300ms;
+  box-shadow: 0 6px 24px 0 rgba(16, 16, 16, 0.14);
+  translate: 0px -10px;
+}
+
+.press-main-container {
+  opacity: 0;
+}
+
+.read-more-div:hover .read-more i {
+  translate: 5px -5px;
+}

@@ -1,0 +1,83 @@
+.navbar {
+  z-index: 10;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.hover-nav-li:hover {
+  color: $primary;
+}
+
+.downloadAppTransition {
+  background-color: white;
+}
+
+.downloadAppTransition:hover {
+  background-color: $primary;
+  color: white;
+}
+
+.registerAppTransition {
+  background-color: $primary;
+}
+
+.registerAppTransition:hover {
+  opacity: 0.8;
+}
+
+.navMain {
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease;
+  width: 100%;
+}
+
+.pages-nav:hover i {
+  rotate: -180deg;
+}
+
+.pages-nav .dropdown {
+  display: none;
+}
+
+.pages-nav:hover .dropdown {
+  display: flex;
+}
+
+.hover-dropdown-li-duration {
+  color: $secondary;
+}
+
+.hover-dropdown-li-duration:hover {
+  color: $primary;
+}
+
+.mainBlackDiv {
+  background-color: rgba(0, 0, 0, 0.352);
+  left: 0;
+}
+
+.sideBar {
+  z-index: 20;
+}
+
+.fa-xmark {
+  color: $secondary;
+}
+
+.fa-xmark:hover {
+  color: $primary;
+}
+
+.side-bar-container {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.side-bar-container-main {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
