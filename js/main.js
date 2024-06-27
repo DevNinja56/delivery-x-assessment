@@ -402,7 +402,7 @@ document.querySelectorAll(".trigger-div").forEach((trigger) => {
   const closeIcon = sideBarContainer.querySelector(".close-icon");
 
   closeIcon.addEventListener("click", (e) => {
-    e.stopPropagation();
+    e.stopPropagation()
     gsap.to(sideBarContainerMain, {
       opacity: 0,
       visibility: "hidden",
